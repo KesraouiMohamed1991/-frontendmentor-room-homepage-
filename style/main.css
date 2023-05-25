@@ -1,0 +1,610 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+  font-family: "League Spartan", Courier, monospace;
+}
+
+svg {
+  color: white;
+}
+
+#back, main .container .cardOne .partone, main .container .cardTwo .one, main .container .cardTwo .three {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#flex-row, main .container .cardOne .partone nav, main .container .cardOne .control, main .container .cardOne .control .left, main .container .cardOne .control .right, main .container .cardTwo, main .container .mobile-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#flex-col, main .container .cardOne .parttwo-2, main .container .cardOne .partThree-3, main .container .cardOne .partFour-4, main .container .mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#flex, main .container .cardOne {
+  display: flex;
+}
+
+main {
+  height: 100vh;
+  font-family: "League Spartan", Courier, monospace;
+}
+main .container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+main .container .cardOne {
+  position: relative;
+  height: 63%;
+  width: 100%;
+}
+main .container .cardOne .partone {
+  background-image: url(/images/desktop-image-hero-1.jpg);
+  width: 62%;
+  height: 100%;
+}
+main .container .cardOne .partone nav {
+  height: 80px;
+  width: 60%;
+  padding-top: 2rem;
+  margin-left: 3rem;
+}
+main .container .cardOne .partone nav .logo {
+  margin-left: 2rem;
+}
+main .container .cardOne .partone nav .open {
+  display: none;
+  z-index: 10;
+}
+main .container .cardOne .partone nav ul {
+  margin-left: 2rem;
+  width: 100%;
+}
+main .container .cardOne .partone nav ul li {
+  list-style-type: none;
+  display: inline;
+  font-size: 1.4rem;
+  margin-left: 2rem;
+  color: hsl(0deg, 0%, 100%);
+  padding-bottom: 0.3rem;
+}
+main .container .cardOne .partone nav ul li:hover {
+  border-bottom: 2px solid white;
+  transition: 0.1s ease;
+}
+main .container .cardOne .parttwo-2 {
+  background-color: hsl(0deg, 0%, 100%);
+  width: 38%;
+  height: 100%;
+  padding: 9rem;
+  display: none;
+}
+main .container .cardOne .parttwo-2 h1 {
+  font-size: 3.3rem;
+  height: 12rem;
+  line-height: 4rem;
+  text-transform: capitalize;
+}
+main .container .cardOne .parttwo-2 p {
+  height: 12rem;
+  font-size: 1.3rem;
+  color: hsl(0deg, 0%, 63%);
+  line-height: 26px;
+}
+main .container .cardOne .parttwo-2 .shop {
+  margin-top: 1rem;
+  height: 3rem;
+  display: block;
+  width: 100%;
+  letter-spacing: 7px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+main .container .cardOne .parttwo-2 .shop span {
+  padding-top: 1rem;
+}
+main .container .cardOne .parttwo-2 .shop:hover span {
+  color: hsl(0deg, 0%, 63%);
+  transform: translateX(10px);
+}
+main .container .cardOne .parttwo-2 .shop:hover {
+  color: hsl(0deg, 0%, 63%);
+}
+main .container .cardOne .partThree-3 {
+  background-color: hsl(0deg, 0%, 100%);
+  width: 38%;
+  height: 100%;
+  padding: 9rem;
+  display: none;
+}
+main .container .cardOne .partThree-3 h1 {
+  font-size: 3.3rem;
+  height: 12rem;
+  line-height: 4rem;
+  text-transform: capitalize;
+}
+main .container .cardOne .partThree-3 p {
+  height: 12rem;
+  font-size: 1.3rem;
+  color: hsl(0deg, 0%, 63%);
+  line-height: 26px;
+}
+main .container .cardOne .partThree-3 .shop {
+  margin-top: 1rem;
+  height: 3rem;
+  display: block;
+  width: 100%;
+  letter-spacing: 7px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+main .container .cardOne .partThree-3 .shop span {
+  padding-top: 1rem;
+}
+main .container .cardOne .partThree-3 .shop:hover span {
+  color: hsl(0deg, 0%, 63%);
+  transform: translateX(10px);
+}
+main .container .cardOne .partThree-3 .shop:hover {
+  color: hsl(0deg, 0%, 63%);
+}
+main .container .cardOne .partFour-4 {
+  background-color: hsl(0deg, 0%, 100%);
+  width: 38%;
+  height: 100%;
+  padding: 9rem;
+  display: none;
+}
+main .container .cardOne .partFour-4 h1 {
+  font-size: 3.3rem;
+  height: 12rem;
+  line-height: 4rem;
+  text-transform: capitalize;
+}
+main .container .cardOne .partFour-4 p {
+  height: 12rem;
+  font-size: 1.3rem;
+  color: hsl(0deg, 0%, 63%);
+  line-height: 26px;
+}
+main .container .cardOne .partFour-4 .shop {
+  margin-top: 1rem;
+  height: 3rem;
+  display: block;
+  width: 100%;
+  letter-spacing: 7px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+main .container .cardOne .partFour-4 .shop span {
+  padding-top: 1rem;
+}
+main .container .cardOne .partFour-4 .shop:hover span {
+  color: hsl(0deg, 0%, 63%);
+  transform: translateX(10px);
+}
+main .container .cardOne .partFour-4 .shop:hover {
+  color: hsl(0deg, 0%, 63%);
+}
+main .container .cardOne .slide {
+  display: block;
+}
+main .container .cardOne .control {
+  position: absolute;
+  background-color: #000;
+  width: 10%;
+  height: 14%;
+  bottom: 0;
+  right: 28%;
+}
+main .container .cardOne .control .left {
+  width: 50%;
+  height: 100%;
+}
+main .container .cardOne .control .left:hover {
+  background-color: hsl(0deg, 0%, 63%);
+}
+main .container .cardOne .control .right {
+  width: 50%;
+  height: 100%;
+}
+main .container .cardOne .control .right:hover {
+  background-color: hsl(0deg, 0%, 63%);
+}
+main .container .cardTwo {
+  height: 37%;
+  width: 100%;
+  background-color: rgb(173, 188, 159);
+}
+main .container .cardTwo .one {
+  height: 100%;
+  width: 28%;
+  background-image: url(/images/image-about-dark.jpg);
+}
+main .container .cardTwo .two {
+  height: 100%;
+  width: 44%;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 6rem;
+}
+main .container .cardTwo .two h4 {
+  color: #000;
+  font-weight: 700;
+  font-size: clamp(2rem, 3vw, 18px);
+  height: 4rem;
+  text-transform: capitalize;
+}
+main .container .cardTwo .two p {
+  height: 12rem;
+  font-size: 1.3rem;
+  color: hsl(0deg, 0%, 63%);
+  line-height: 26px;
+}
+main .container .cardTwo .three {
+  height: 100%;
+  width: 28%;
+  background-image: url(/images/image-about-light.jpg);
+}
+main .container .mobile-nav {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(87, 93, 81);
+  top: 0;
+  left: 0;
+  color: hsl(0deg, 0%, 100%);
+}
+main .container .mobile-nav ul {
+  background-color: rgb(56, 56, 60);
+  width: 50%;
+  height: 60%;
+}
+main .container .mobile-nav ul li {
+  font-size: 3rem;
+  list-style-type: none;
+  padding: 3rem;
+  color: hsl(0deg, 0%, 100%);
+  letter-spacing: 12px;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    background-color: cadetblue;
+  }
+  main .container {
+    width: 100%;
+  }
+  main .container .cardOne {
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  main .container .cardOne .partone {
+    width: 100%;
+    height: 60%;
+  }
+  main .container .cardOne .partone nav {
+    height: 20px;
+    width: 100%;
+    padding-top: 4rem;
+    margin-left: 0;
+    position: relative;
+  }
+  main .container .cardOne .partone nav .open {
+    display: block;
+    position: absolute;
+    left: 8%;
+  }
+  main .container .cardOne .partone nav ul {
+    display: none;
+  }
+  main .container .cardOne .slide {
+    width: 100%;
+    height: 40%;
+    padding: 3rem;
+  }
+  main .container .cardOne .slide h1 {
+    font-size: 2rem;
+    height: 38%;
+    line-height: 2.4rem;
+    width: 100%;
+  }
+  main .container .cardOne .slide p {
+    font-size: 1rem;
+    line-height: 16px;
+    height: 1rem;
+  }
+  main .container .cardOne .slide .shop {
+    height: 6rem;
+    display: block;
+    width: 100%;
+    letter-spacing: 8px;
+    display: flex;
+    align-items: flex-end;
+  }
+  main .container .cardOne .control {
+    top: 52%;
+    right: 0;
+    width: 32%;
+    height: 8%;
+  }
+  main .container .cardTwo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  main .container .cardTwo .one {
+    height: 33.33%;
+    width: 100%;
+    background-image: url(/images/image-about-dark.jpg);
+    display: flex;
+    flex-direction: column;
+  }
+  main .container .cardTwo .two {
+    height: 33.33%;
+    width: 100%;
+    background-color: hsl(0deg, 0%, 100%);
+    padding: 1rem;
+  }
+  main .container .cardTwo .two h4 {
+    color: #000;
+    font-weight: 700;
+    font-size: clamp(2rem, 3vw, 18px);
+    height: 2rem;
+    text-transform: capitalize;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  main .container .cardTwo .two p {
+    height: 4rem;
+    font-size: 1.3rem;
+    color: hsl(0deg, 0%, 63%);
+    line-height: 2rem;
+  }
+  main .container .cardTwo .three {
+    height: 33.33%;
+    width: 100%;
+    background-image: url(/images/image-about-light.jpg);
+    display: flex;
+    flex-direction: column;
+  }
+  main .container .mobile-nav.active {
+    display: flex;
+  }
+}
+@media screen and (max-width: 900px) {
+  main {
+    background-color: cadetblue;
+  }
+  main .container {
+    width: 100%;
+  }
+  main .container .cardOne {
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  main .container .cardOne .partone {
+    width: 100%;
+    height: 60%;
+  }
+  main .container .cardOne .partone nav {
+    height: 20px;
+    width: 100%;
+    padding-top: 4rem;
+    margin-left: 0;
+    position: relative;
+  }
+  main .container .cardOne .partone nav .open {
+    display: block;
+    position: absolute;
+    left: 8%;
+  }
+  main .container .cardOne .partone nav ul {
+    display: none;
+  }
+  main .container .cardOne .slide {
+    width: 100%;
+    height: 40%;
+    padding: 3rem;
+  }
+  main .container .cardOne .slide h1 {
+    font-size: 2rem;
+    height: 38%;
+    line-height: 2.4rem;
+    width: 100%;
+  }
+  main .container .cardOne .slide p {
+    font-size: 1rem;
+    line-height: 16px;
+    height: 1rem;
+  }
+  main .container .cardOne .slide .shop {
+    height: 6rem;
+    display: block;
+    width: 100%;
+    letter-spacing: 8px;
+    display: flex;
+    align-items: flex-end;
+  }
+  main .container .cardOne .control {
+    top: 52%;
+    right: 0;
+    width: 32%;
+    height: 8%;
+  }
+  main .container .cardTwo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  main .container .cardTwo .one {
+    height: 33.33%;
+    width: 100%;
+    background-image: url(/images/image-about-dark.jpg);
+    display: flex;
+    flex-direction: column;
+  }
+  main .container .cardTwo .two {
+    height: 33.33%;
+    width: 100%;
+    background-color: hsl(0deg, 0%, 100%);
+    padding: 3rem;
+  }
+  main .container .cardTwo .two h4 {
+    color: #000;
+    font-weight: 700;
+    font-size: clamp(2rem, 3vw, 18px);
+    height: 2rem;
+    text-transform: capitalize;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  main .container .cardTwo .two p {
+    height: 4rem;
+    font-size: 1.3rem;
+    color: hsl(0deg, 0%, 63%);
+    line-height: 2rem;
+  }
+  main .container .cardTwo .three {
+    height: 33.33%;
+    width: 100%;
+    background-image: url(/images/image-about-light.jpg);
+    display: flex;
+    flex-direction: column;
+  }
+  main .container .mobile-nav.active {
+    display: flex;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main {
+    background-color: cadetblue;
+  }
+  main .container {
+    width: 100%;
+  }
+  main .container .cardOne {
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  main .container .cardOne .partone {
+    width: 100%;
+    height: 60%;
+  }
+  main .container .cardOne .partone nav {
+    height: 20px;
+    width: 100%;
+    padding-top: 4rem;
+    margin-left: 0;
+    position: relative;
+  }
+  main .container .cardOne .partone nav .open {
+    display: block;
+    position: absolute;
+    left: 8%;
+  }
+  main .container .cardOne .partone nav ul {
+    display: none;
+  }
+  main .container .cardOne .slide {
+    width: 100%;
+    height: 40%;
+    padding: 3rem;
+  }
+  main .container .cardOne .slide h1 {
+    font-size: 2rem;
+    height: 38%;
+    line-height: 2.4rem;
+    width: 100%;
+  }
+  main .container .cardOne .slide p {
+    font-size: 1rem;
+    line-height: 16px;
+    height: 1rem;
+  }
+  main .container .cardOne .slide .shop {
+    height: 6rem;
+    display: block;
+    width: 100%;
+    letter-spacing: 8px;
+    display: flex;
+    align-items: flex-end;
+  }
+  main .container .cardOne .control {
+    top: 52%;
+    right: 0;
+    width: 32%;
+    height: 8%;
+  }
+  main .container .cardTwo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  main .container .cardTwo .one {
+    height: 33.33%;
+    width: 100%;
+    background-image: url(/images/image-about-dark.jpg);
+    display: flex;
+    flex-direction: column;
+  }
+  main .container .cardTwo .two {
+    height: 33.33%;
+    width: 100%;
+    background-color: hsl(0deg, 0%, 100%);
+    padding: 3rem;
+  }
+  main .container .cardTwo .two h4 {
+    color: #000;
+    font-weight: 700;
+    font-size: clamp(2rem, 3vw, 18px);
+    height: 2rem;
+    text-transform: capitalize;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  main .container .cardTwo .two p {
+    height: 4rem;
+    font-size: 1.3rem;
+    color: hsl(0deg, 0%, 63%);
+    line-height: 2rem;
+  }
+  main .container .cardTwo .three {
+    height: 33.33%;
+    width: 100%;
+    background-image: url(/images/image-about-light.jpg);
+    display: flex;
+    flex-direction: column;
+  }
+  main .container .mobile-nav.active {
+    display: flex;
+  }
+}/*# sourceMappingURL=main.css.map */
